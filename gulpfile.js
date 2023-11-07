@@ -1,10 +1,6 @@
-const server = browserSync.create();
+const gulp = require('gulp');
 
-function doStuff(){
-    server.init({
-        server: {
-            baseDir: './'
-        }
-    });
+gulp.task('default', function (done) {
+    console.log('Hello, I am a Gulp task');
     done();
-}
+});
