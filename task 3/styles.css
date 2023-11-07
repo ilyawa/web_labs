@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+form {
+    margin-bottom: 1em;
+}
+
+input[type="url"] {
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+button {
+    background-color: #6277ba;
+    color: white;
+    padding: 0.5em 1em;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #628dba;
+}
+
+iframe {
+    width: 100%;
+    height: 50vh;
+    border: black;
+    border-width: 2px;
+    text-align: center;
+    position: relative;
+    align-items: center;
+}
+
