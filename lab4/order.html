@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <<link rel="stylesheet" type="text/css" href="styles.css">
+    "text/css" href="style.css">
+    <title>Дополнительная информация</title>
+    <style>
+        form {
+            display: flex;
+            flex-direction: column;
+            max-width: 300px;
+        }
+        input {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+<h1>Дополнительная информация</h1>
+<form action="process_additional_info.php" method="post">
+    <input type="text" name="lastname" placeholder="Фамилия" required>
+    <input type="text" name="firstname" placeholder="Имя" required>
+    <input type="text" name="middlename" placeholder="Отчество">
+    <input type="text" name="address" placeholder="Адрес для доставки" required>
+    <input type="text" name="phone" placeholder="Телефон" required>
+    <input type="email" name="email" placeholder="Email" required>
+    <select name="product">
+        <option value="product1">Товар 1</option>
+        <option value="product2">Товар 2</option>
+        <option value="product3">Товар 3</option>
+    </select>
+    <textarea name="comment" placeholder="Комментарий"></textarea>
+    <input type="submit" value="Отправить">
+</form>
+</body>
+</html>
