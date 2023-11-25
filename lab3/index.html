@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Форма обратной связи</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<form method="post" action="send2.php">
+    <label for="name">Имя:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="surname">Фамилия:</label>
+    <input type="text" id="surname" name="surname" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label>Пол:</label>
+    <label for="male">Мужской</label>
+    <input type="radio" id="male" name="gender" value="male" required>
+    <label for="female">Женский</label>
+    <input type="radio" id="female" name="gender" value="female" required>
+
+
+    <label>Интересы:</label>
+    <label for="programming">Программирование</label>
+    <input type="checkbox" id="programming" name="interests[]" value="programming">
+    <label for="drawing">Рисование</label>
+    <input type="checkbox" id="drawing" name="interests[]" value="drawing">
+    <label for="reading">Чтение</label>
+    <input type="checkbox" id="reading" name="interests[]" value="reading">
+
+
+    <label for="feedback">Обратная связь:</label>
+    <textarea id="feedback" name="feedback" required></textarea>
+
+    <input type="submit" value="Отправить">
+</form>
+</body>
+</html>

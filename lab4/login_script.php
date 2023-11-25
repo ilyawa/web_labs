@@ -18,15 +18,15 @@ function invertBitsInString($str) {
     $result = '';
     $len = strlen($str);
     for ($i = 0; $i < $len; $i++) {
-        // Convert character to ASCII value
+        // преобразуем значение символов к коду ASKII
         $ascii = ord($str[$i]);
-        // Convert ASCII value to binary string
+        // переводим код ASKII в двоичное число
         $bin = decbin($ascii);
-        // Pad binary string with zeros on the left to ensure it's 8 bits long
+        // дополняем строку 0 слева до полного байта
         $bin = str_pad($bin, 8, "0", STR_PAD_LEFT);
-        // Invert bits in binary string
+        // инвертируем строку
         $bin = $bin ^ str_repeat('1', 8);
-        // Convert inverted binary string back to string
+        // переводим двоичную строку в обычную
         $result .= chr(bindec($bin));
     }
     return $result;
